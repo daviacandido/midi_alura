@@ -3,9 +3,7 @@ function tocaSom(idElementAudio) {
 
   if (element === null) {
     alert("Elemento não encontrado");
-  } else if (element != null && element.localName != "audio") {
-    alert("ERRO!");
-  } else {
+  } else if (element != null && element.localName === "audio") {
     element.play();
   }
 }
